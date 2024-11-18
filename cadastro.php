@@ -22,24 +22,21 @@ if (isset($_GET["excluir"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
 </head>
 
 <body>
+<form method="POST" action="login.php">
     <h2>
         Cadastre um novo usuário
-    </h2>
-
-    <form method="POST" action="cadastro.php">
+    </h2><br>
         <input type="text" name="usuario" id="usuario" placeholder="usuario" required><br><br>
         <input type="password" name="senha" id="senha" placeholder="senha" required><br><br>
         <button type="submit">Cadastrar</button>
         <button><a href="login.php"></a>Logar</button>
     </form>
-    <h3>
-        Usuarios Cadastrados
-    </h3>
-    <?php listarUsuario() ?>
+
 </body>
 
 </html>
